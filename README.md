@@ -3,6 +3,8 @@
     Assignment #3
 </h1>
 
+<h1>GitHub Pages Link: <strong>https://aidynulymakhambet.github.io/Assignment--3-WEB/</strong></h1>
+
 <h2>Task #0</h2>
 <h3>Task decription</h3>
 <h4>
@@ -130,7 +132,7 @@ Code for Task #1 can be found <a href="Task_1.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task2_1.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task2_1.png" alt="Task_2" width="300" /><br>
       <b>When viewed on Desktop</b><br>
       All 3 box lined up on one row. But with bootstrap
     </td>
@@ -142,7 +144,7 @@ Code for Task #1 can be found <a href="Task_1.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task2_2.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task2_2.png" alt="Task_2" width="300" /><br>
       <b>When viewed on Tablet</b><br>
       On tablets: grid with first 2 boxes on top and second line entirely taken by third box. But with bootstrap
     </td>
@@ -154,7 +156,7 @@ Code for Task #1 can be found <a href="Task_1.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task2_3.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task2_3.png" alt="Task_2" width="300" /><br>
       <b>When viewed on Mobile</b><br>
       All 3 boxes lined up vertically. But with bootstrap
     </td>
@@ -180,7 +182,7 @@ Code for Task #2 can be found <a href="Task_2.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task3_1.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task3_1.png" alt="Task_3" width="300" /><br>
       <b>When viewed on Desktop</b><br>
       On Desktop menu on the right visible without dropdwon menu
     </td>
@@ -192,7 +194,7 @@ Code for Task #2 can be found <a href="Task_2.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task3_2.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task3_2.png" alt="Task_3" width="300" /><br>
       <b>When viewed on Tablet</b><br>
       On tablets: menu on the right have a button for a dropdown menu.
     </td>
@@ -204,7 +206,7 @@ Code for Task #2 can be found <a href="Task_2.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task3_3.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task3_3.png" alt="Task_3" width="300" /><br>
       <b>When viewed on Mobile</b><br>
       On mobile: also a button for with a dropdown menu
     </td>
@@ -245,7 +247,7 @@ Code for Task #3 can be found <a href="Task_3.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task4_1.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task4_1.png" alt="Task_4" width="300" /><br>
       <b>When viewed on Desktop</b><br>
       On Desktop everything is visible on one screen
     </td>
@@ -257,7 +259,7 @@ Code for Task #3 can be found <a href="Task_3.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task4_2.png" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task4_2.png" alt="Task_4" width="300" /><br>
       <b>When viewed on Tablet</b><br>
       On tablets: everyting can be seen one one screen except top-right menu, it hides in dropdown menu, which can be accessed with a button.
     </td>
@@ -269,7 +271,7 @@ Code for Task #3 can be found <a href="Task_3.html">Here</a>.
 <table>
   <tr>
     <td>
-      <img src="Screenshots/Task4_3.gif" alt="Task_1" width="300" /><br>
+      <img src="Screenshots/Task4_3.gif" alt="Task_4" width="300" /><br>
       <b>When viewed on Mobile</b><br>
       On mobile: Everything is lined up, page becomes longer, top-right menu hides behind a button in dropdown menu
     </td>
