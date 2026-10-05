@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task #4</title>
+    
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+        /* Base Page Styles */
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+        }
+
+        /* Sidebar Custom Card */
+        .sidebar-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        /* Card Image Aspect Ratio */
+        .project-img {
+            height: 160px;
+            object-fit: cover;
+        }
+
+        /* ==========================================================================
+           CUSTOM MEDIA QUERIES (Mobile, Tablet, Desktop)
+           ========================================================================== */
+
+        /* 1. Mobile Screen Adjustments (< 576px) */
+        @media (max-width: 575.98px) {
+            h1 {
+                font-size: 1.5rem !important;
+            }
+            h2 {
+                font-size: 1.3rem !important;
+            }
+            h5 {
+                font-size: 1.1rem !important;
+            }
+            
+            /* Tighter padding on smaller screens */
+            .main-content {
+                padding-top: 1rem !important;
+            }
+            .card-body {
+                padding: 0.85rem !important;
+            }
+            .sidebar-card {
+                padding: 15px !important;
+                margin-top: 1rem;
+            }
+
+            /* Hide non-essential badges or info on small screens */
+            .hide-on-mobile {
+                display: none !important;
+            }
+        }
+
+        /* 2. Tablet Screen Adjustments (576px to 991px) */
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            h1 {
+                font-size: 1.8rem !important;
+            }
+            h2 {
+                font-size: 1.5rem !important;
+            }
+            .project-img {
+                height: 140px;
+            }
+        }
+
+        /* 3. Desktop Screen Adjustments (>= 992px) */
+        @media (min-width: 992px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            h2 {
+                font-size: 1.75rem;
+            }
+            .sticky-sidebar-desktop {
+                position: sticky;
+                top: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER WITH BOOTSTRAP NAVBAR -->
+    <header id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+            <div class="container">
+                <!-- Brand Name -->
+                <a class="navbar-brand fw-bold" href="#home">
+                    <i class="bi bi-code-slash text-warning me-2"></i>Aidynuly Makhambet
+                </a>
+                
+                <!-- Mobile Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#studentNav" aria-controls="studentNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Links -->
+                <div class="collapse navbar-collapse" id="studentNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="container my-4 main-content">
+        <div class="row g-4">
+            
+            <!-- LEFT SIDE: PORTFOLIO PROJECTS (col-lg-8, col-md-7) -->
+            <section class="col-lg-8 col-md-7" id="projects">
+                <div class="d-flex align-items-center justify-content-between mb-3 border-bottom pb-2">
+                    <h2 class="fw-bold mb-0 text-primary">My Projects</h2>
+                    <span class="badge bg-primary rounded-pill">4 Homeworks</span>
+                </div>
+
+                <!-- Nested Bootstrap Grid for Cards (1 col on mobile, 2 cols on tablets/desktop) -->
+                <div class="row row-cols-1 row-cols-sm-2 g-3">
+                    
+                    <!-- PROJECT CARD 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://placehold.co/600x400/0d6efd/ffffff?text=Assignment+1" class="card-img-top project-img" alt="Student Portal App">
+                            <div class="card-body d-flex flex-direction-column flex-column">
+                                <h5 class="card-title fw-bold">Assignment #1</h5>
+                                <p class="card-text text-muted small">Assignment #1, that i've already defended</p>
+                                
+                                <div class="mb-3 mt-auto">
+                                    <span class="badge bg-secondary">HTML</span>
+                                    <span class="badge bg-secondary">CSS</span>
+                                    <!-- Hide extra detail badge on mobile -->
+                                </div>
+                                <a href="https://github.com/AidynulyMakhambet/WEB-Assignment-1" target="_blank" class="btn btn-sm btn-outline-primary w-100">
+                                    <i class="bi bi-github me-1"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 2 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://placehold.co/600x400/198754/ffffff?text=Assignment+2" class="card-img-top project-img" alt="Weather App">
+                            <div class="card-body d-flex flex-direction-column flex-column">
+                                <h5 class="card-title fw-bold">Assignment #2</h5>
+                                <p class="card-text text-muted small">Already defended Assignment #2</p>
+                                
+                                <div class="mb-3 mt-auto">
+                                    <span class="badge bg-secondary">HTML</span>
+                                    <span class="badge bg-secondary">CSS</span>
+                                </div>
+                                <a href="https://github.com/AidynulyMakhambet/Assignment-2-WEB" target="_blank" class="btn btn-sm btn-outline-primary w-100">
+                                    <i class="bi bi-github me-1"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://placehold.co/600x400/fd7e14/ffffff?text=Assignment+3" class="card-img-top project-img" alt="To-Do List">
+                            <div class="card-body d-flex flex-direction-column flex-column">
+                                <h5 class="card-title fw-bold">Assignnment #3</h5>
+                                <p class="card-text text-muted small">Assignment #3, that i'am currently trying my best to defend</p>
+                                
+                                <div class="mb-3 mt-auto">
+                                    <span class="badge bg-secondary">HTML</span>
+                                    <span class="badge bg-secondary">CSS</span>
+                                    <span class="badge bg-secondary">Bootstrap</span>
+                                </div>
+                                <a href="https://github.com/AidynulyMakhambet/Assignment--3-WEB" target="_blank" class="btn btn-sm btn-outline-primary w-100">
+                                    <i class="bi bi-github me-1"></i> View Code 
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT CARD 4 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://placehold.co/600x400/6f42c1/ffffff?text=GitHub" class="card-img-top project-img" alt="Calculator App">
+                            <div class="card-body d-flex flex-direction-column flex-column">
+                                <h5 class="card-title fw-bold">Github</h5>
+                                <p class="card-text text-muted small">Just a link to GitHub</p>
+                                
+                                <div class="mb-3 mt-auto">
+                                    <span class="badge bg-secondary">GitHub</span>
+                                </div>
+                                <a href="https://github.com" target="_blank" class="btn btn-sm btn-outline-primary w-100">
+                                    <i class="bi bi-github me-1"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- RIGHT SIDE: SIDEBAR (col-lg-4, col-md-5) -->
+            <aside class="col-lg-4 col-md-5" id="about">
+                <div class="sticky-sidebar-desktop">
+                    
+                    <!-- PERSONAL INFO CARD -->
+                    <div class="sidebar-card text-center mb-4">
+                        <!-- Avatar Placeholder -->
+                        <img src="https://placehold.co/120x120/0d6efd/ffffff?text=AM" alt="Alex Smith Avatar" class="rounded-circle mb-3 border border-3 border-primary shadow-sm" width="100" height="100">
+                        
+                        <h4 class="fw-bold mb-1">Aidynuly Makhambet</h4>
+                        <p class="text-primary small mb-3">2rd Year IT Student</p>
+                        
+                        <p class="text-muted small text-start">
+                            Hello! I'm defending assignment #3.
+                        </p>
+
+                        <hr class="my-3 text-muted">
+
+                        <!-- SKILLS BADGES -->
+                        <div class="text-start mb-3">
+                            <h6 class="fw-bold mb-2"><i class="bi bi-tools text-primary me-1"></i> Skills</h6>
+                            <div class="d-flex flex-wrap gap-1">
+                                <span class="badge bg-light text-dark border">HTML</span>
+                                <span class="badge bg-light text-dark border">CSS</span>
+                                <span class="badge bg-light text-dark border">Bootstrap</span>
+                                <span class="badge bg-light text-dark border">GitHub</span>
+                            </div>
+                        </div>
+
+                        <hr class="my-3 text-muted">
+
+                        <!-- CONTACT DETAILS -->
+                        <div class="text-start" id="contact">
+                            <h6 class="fw-bold mb-2"><i class="bi bi-envelope-paper text-primary me-1"></i> Contact Details</h6>
+                            <ul class="list-unstyled small text-muted m-0">
+                                <li class="mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i>AITU</li>
+                                <li class="mb-2"><i class="bi bi-envelope-fill text-primary me-2"></i>-empty</li>
+                                <li class="mb-0"><i class="bi bi-github text-dark me-2"></i>github.com/AidynulyMakhambet</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-3 mt-5">
+        <div class="container text-center">
+            <p class="mb-0 small text-secondary">&copy; 2026 Aidynuly Makhambet | Assignment #3 WEB</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

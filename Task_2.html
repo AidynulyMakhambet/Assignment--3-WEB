@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task #2</title>
+    
+    <!-- Load Bootstrap 5 via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .content-box {
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .content-box:hover {
+            transform: translateY(-5px);
+        }
+        /* Soft, distinct colors for the boxes */
+        .box-1 { background-color: #4A90E2; color: white; }
+        .box-2 { background-color: #50E3C2; color: #333; }
+        .box-3 { background-color: #F5A623; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="display-5 fw-bold text-dark">Bootstrap Responsive Grid</h1>
+            <p class="text-muted lead">Resize your browser window to see the grid change.</p>
+        </header>
+
+        <!-- The 'row' class creates a flexbox container, 'g-4' adds gaps (gutters) between columns -->
+        <div class="row g-4">
+            
+            <!-- Column 1 -->
+            <!-- Mobile: 12 cols (full width) -> col-12 -->
+            <!-- Tablet: 6 cols (half width)  -> col-md-6 -->
+            <!-- Desktop: 4 cols (third width) -> col-lg-4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="content-box box-1">
+                    <h3 class="fw-bold">Column 1</h3>
+                    <hr class="w-25">
+                    <ul class="list-unstyled mb-0">
+                        <li><strong>Desktop:</strong> 4 / 12</li>
+                        <li><strong>Tablet:</strong> 6 / 12</li>
+                        <li><strong>Mobile:</strong> 12 / 12</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <!-- Mobile: 12 cols (full width) -> col-12 -->
+            <!-- Tablet: 6 cols (half width)  -> col-md-6 -->
+            <!-- Desktop: 4 cols (third width) -> col-lg-4 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="content-box box-2">
+                    <h3 class="fw-bold">Column 2</h3>
+                    <hr class="w-25" style="border-color: #333;">
+                    <ul class="list-unstyled mb-0">
+                        <li><strong>Desktop:</strong> 4 / 12</li>
+                        <li><strong>Tablet:</strong> 6 / 12</li>
+                        <li><strong>Mobile:</strong> 12 / 12</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <!-- Mobile: 12 cols (full width) -> col-12 -->
+            <!-- Tablet: 12 cols (full width, drops to next row) -> col-md-12 -->
+            <!-- Desktop: 4 cols (third width, joins first row) -> col-lg-4 -->
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="content-box box-3">
+                    <h3 class="fw-bold">Column 3</h3>
+                    <hr class="w-25">
+                    <ul class="list-unstyled mb-0">
+                        <li><strong>Desktop:</strong> 4 / 12</li>
+                        <li><strong>Tablet:</strong> 12 / 12 (New Row)</li>
+                        <li><strong>Mobile:</strong> 12 / 12</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Load Bootstrap JS for potential interactive components in the future -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

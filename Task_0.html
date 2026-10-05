@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task #0</title>
+</head>
+
+<style>
+/* Task 0 */
+:root {
+    --bg-color: #f0f4f8;
+    --text-color: #334155;
+    --heading-color: #0f172a;
+    --accent-color: #3b82f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 0px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    color: var(--heading-color);
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+    font-size: 24px; /* Small font for Mobile */
+}
+
+h2 {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 18px; /* Small font for Mobile */
+}
+
+p {
+    margin-bottom: 1.25rem;
+    font-size: 16px; /* Small font for Mobile */
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.device-label::before {
+    content: 'Mobile View (≤ 600px)';
+}
+
+@media (min-width: 601px) {
+    .container {
+        padding: 3rem;
+    }
+
+    .badge {
+        background-color: #ffff00;
+    }
+
+    h1 {
+        font-size: 36px; /* Medium font for Tablet */
+    }
+
+    h2 {
+        font-size: 24px; /* Medium font for Tablet */
+    }
+
+    p {
+        font-size: 18px; /* Medium font for Tablet */
+    }
+
+    .device-label::before {
+        content: 'Tablet View (601px - 1024px)';
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        padding: 4rem;
+    }
+
+    .badge {
+        background-color: #00ff00;
+    }
+
+    h1 {
+        font-size: 48px; /* Larger font for Desktop */
+    }
+
+    h2 {
+        font-size: 32px; /* Larger font for Desktop */
+    }
+
+    p {
+        font-size: 22px; /* Larger font for Desktop */
+    }
+
+    .device-label::before {
+        content: 'Desktop View (≥ 1025px)';
+    }
+}
+</style>
+
+<body>
+    <!-- Task 0 -->
+    <main class="container">
+        <p>You're currently on <strong>Task #0</strong></p>
+        <!-- The text in this badge changes based on the CSS media queries -->
+        <div class="badge">
+            <span class="device-label"></span>
+        </div>
+        
+        <h1>Responsive Typography</h1>
+        <h2>Fluid reading across all devices</h2>
+        
+        <p>
+            This webpage demonstrates how typography can adapt to different screen sizes using <strong>CSS media queries</strong>. 
+            By adjusting your browser window width, you can observe the font sizes dynamically scaling to provide the best reading experience.
+        </p>
+        <p>
+            On <strong>mobile devices</strong>, the text remains compact to fit narrow screens. As you transition to a <strong>tablet size</strong>, the headings and paragraphs scale up to remain legible from a slightly further distance. Finally, on <strong>desktop screens</strong>, the typography expands significantly to take advantage of the wider, high-resolution displays, creating a comfortable and striking visual hierarchy.
+        </p>
+    </main>
+</body>
+</html>
